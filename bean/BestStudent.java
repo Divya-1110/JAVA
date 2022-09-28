@@ -25,6 +25,7 @@ public class BestStudent {
 			String name=input.next();
 			System.out.print("Enter student marks:");
 			int score=input.nextInt();
+			
 			//check condition-comparing  every student mark with first student score
 			if(score>score1) 
 			{
