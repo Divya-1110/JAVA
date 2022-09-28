@@ -2,20 +2,26 @@ package com.nissan.bean;
 
 import java.util.Scanner;
 
-public class PoundToKilo {
+public class PoundToKilo
+{
 
-	//concert pound to kilogram
-	public static void main(String[] args) {
-		// get input from user
+	public static void main(String[] args)
+	{
 		Scanner input =new Scanner(System.in);
+		
+		// get input from user
 		System.out.println("Enter a num in pounds: ");
 		double pounds=input.nextDouble();
-		//convert
+		
+		//display result
 		double kilo=poundsToKilogram(pounds);
 		System.out.println("Pound In Kilogram:"+kilo);
 		
 	}
-private static double poundsToKilogram(double pounds) {
+
+   //convert pound to kilogram	
+   private static double poundsToKilogram(double pounds)
+   {
 	return pounds*0.456; //airthmetic operator
-}
+    }
 }
