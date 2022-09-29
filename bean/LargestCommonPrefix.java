@@ -8,17 +8,18 @@ public class LargestCommonPrefix {
 
 	public static void main(String[] args)
 	{
-	 /*  Scanner input=new Scanner(System.in);
+	   Scanner input=new Scanner(System.in);
 	   
-	   //get input
+	   //get user input
 	   System.out.println("Enter the String1:");
-	   String firststring=input.nextLine();		
+	   String firststring=input.nextLine();
+	   
 	   System.out.println("Enter the String2:");
 	   String secondstring=input.nextLine();		
 		
 	   //logic
-	   //find len of smallest string
 	   
+	   //find length of smallest string
 	   int smaller=Math.min(firststring.length(), secondstring.length());
 	   
 	   //len of smaller string as max loop iteration
@@ -39,19 +40,17 @@ public class LargestCommonPrefix {
 			 break; 
 		  }
 	   }
+	   
+	   //display-output
 	   if(commonstring.length()==0)
 	   {
 		  System.out.println(firststring+" and "+secondstring+"have no common prefix");
 		  
 	   }
-	   else {
+	   else 
+	   {
 		   System.out.println("The common prefix is: "+commonstring);
 	   }
-	 *///substring
-		String firstname="Faith info tech";
-		//
-		System.out.println(firstname.length());
-		System.out.println(firstname.substring(0,6));
-		
+	 	
     }
 }
