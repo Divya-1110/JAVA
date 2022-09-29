@@ -18,22 +18,27 @@ public class NoOfDays {
 			System.out.print("Enter the year:");
 			int year=input.nextInt();
 			
-			//get Days In Month
+		    //get Days In Month
 		     int daysInMonth=getDayInMonth(month,year);
+			
 		    //get month name
 		     String monthname=getMonthName(month);
+			
 		    //print result
-              System.out.println(month)
+                     System.out.println(month)
+			     
 		}while(inputYesNo=='y' || inputYesNo=='Y');
 			
-	//get month name
-		Private static String getMonthName(int month) {
+	         //get month name
+		Private static String getMonthName(int month)
+		{
 			String output="";
-			if(month<1||month>12) {
+			if(month<1||month>12) 
+			{
 				output="Invalid Entry";
-			
 			}
-			else {
+			else 
+			{
 				switch(month) 
 				{
 				  case 1:
@@ -51,37 +56,35 @@ public class NoOfDays {
 				  case 5:
 					  output="May";
 					  break;
-			     case 6:
-				     output="June";
-				     break;
-			     case 7:
+			          case 6:
+				         output="June";
+				          break;
+			          case 7:
 					  output="July";
 					  break;
-			     case 8:
+			          case 8:
 					  output="August";
 					  break;
-			     case 9:
+			          case 9:
 					  output="September";
 					  break;
-			     case 10:
+			          case 10:
 					  output="October";
 					  break;
-			     case 11:
+			          case 11:
 					  output="November";
 					  break;
-			     case 12:
+			           case 12:
 					  output="December";
 					  break;
-			      
-			
 				}
-				return output;
-				
+				return output;	
 			}
 					
 		}
 		
-		private static int getDayInMonth(int month,int year) {
+		private static int getDayInMonth(int month,int year)
+		{
 			int days=-1;
 			if(month==1||month==3||month==5||month==7||month==8||month==10||month==12) {
 				days=31;
@@ -95,6 +98,7 @@ public class NoOfDays {
 			}
 			return days;
 		}
+		
 		//leap year
 		private static boolean isLeapYear(int year) {
 			return (year%4==0 && year%100==0) || year%400==0;
