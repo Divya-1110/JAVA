@@ -1,0 +1,19 @@
+Development Steps:
+--------------------
+1.cereate packages
+     --com.nissan.bean
+              Atm.java
+     --com.nissan.lib
+            AtmList -CRUD
+                   --AddCustomer              
+                   --search a customer details
+                   --list all  customer details             
+                   --update customer         
+                   --delete customer		
+		   -- deposit
+                   --withraw
+		    --transfering money 
+		   --display balance
+
+      --com.nissan.app
+                AtmApp.java
