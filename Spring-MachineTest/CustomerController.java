@@ -19,14 +19,13 @@ import com.nissan.model.Customer;
 
 import com.nissan.service.IAdminService;
 
+@CrossOrigin                   //helps to avoid (cors) error
+@RestController
+@RequestMapping("api/")
 
 
 public class CustomerController {
 
-@CrossOrigin                   //helps to avoid (cors) error
-@RestController
-@RequestMapping("api/")
-public class EmployeeController {
 	
 	//field DI Injection
 		@Autowired
@@ -73,6 +72,6 @@ public class EmployeeController {
 					return customer;
 			}
 					
-}
+
 }
 
