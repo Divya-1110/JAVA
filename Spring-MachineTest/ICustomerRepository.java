@@ -10,7 +10,7 @@ import com.nissan.model.Customer;
 public interface ICustomerRepository extends JpaRepositoryImplementation<Customer, Long> {
 
 	@Query("from Customer Where accountNo=?1")
-	public Customer findByAccNo(long accountNo);
+	public Customer findByAccNo(String accountNo);
 
 
 
