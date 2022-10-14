@@ -40,7 +40,7 @@ public class CustomerController {
 		
  	     //get by phone number
 		  @GetMapping("customers/{accountNo}")
-		  public Customer findByAccNo(@PathVariable long accountNo)
+		  public Customer findByAccNo(@PathVariable String accountNo)
 			{
 				return adminService.findByAccNo(accountNo);
 			}
